@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Damascus-Helper/static/css/main.bfdb282d.css",
+    "main.js": "/Damascus-Helper/static/js/main.d638230b.js",
+    "static/js/787.e0cfc721.chunk.js": "/Damascus-Helper/static/js/787.e0cfc721.chunk.js",
+    "index.html": "/Damascus-Helper/index.html",
+    "main.bfdb282d.css.map": "/Damascus-Helper/static/css/main.bfdb282d.css.map",
+    "main.d638230b.js.map": "/Damascus-Helper/static/js/main.d638230b.js.map",
+    "787.e0cfc721.chunk.js.map": "/Damascus-Helper/static/js/787.e0cfc721.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfdb282d.css",
+    "static/js/main.d638230b.js"
+  ]
+}
