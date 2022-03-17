@@ -20,7 +20,7 @@ function App() {
           <ul className='navbar-listings'>
               <Link className='link' to="/">Home</Link>
               <Link className='link' to="/calculators">DPS Calculators</Link>
-              <Link className='link' to="/users">Users</Link>
+              <Link className='link' to="/users">TBD</Link>
           </ul>
         </nav>
 
@@ -35,7 +35,12 @@ function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <div>
+      <h2>Home</h2>
+      <span>Click DPS Calculators. The other tabs have no content at the moment but hopefully will be updated soon :)</span>
+    </div>
+  )
 }
 
 function Users() {
