@@ -41,7 +41,7 @@ const Calculators = () => {
     const [trueEnemyDps, setTrueEnemyDps] = useState(0);
     const [hitChance, setHitChance] = useState(0);
     const [badHitChance, setBadHitChance] = useState(0);
-    const [sustainRatio, setSustainRatio] = useState(0);
+    const [dpsRatio, setDpsRatio] = useState(0);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -105,7 +105,7 @@ const Calculators = () => {
         setTrueEnemyDps(trueEnemyDpsCopy);
         setHitChance(hitChanceCopy);
         setBadHitChance(badHitChanceCopy);
-        setSustainRatio((truePlayerDpsCopy/trueEnemyDpsCopy).toFixed(4));
+        setDpsRatio((truePlayerDpsCopy/trueEnemyDpsCopy).toFixed(4));
     }
 
     return (
@@ -310,7 +310,7 @@ const Calculators = () => {
                     <div>Raw DPS: {rawPlayerDps}</div>
                     <div>True DPS: {truePlayerDps}</div>
                     <div>Enemy True DPS: {trueEnemyDps}</div>
-                    <div>Sustainability Ratio: {sustainRatio}</div>
+                    <div>DPS Ratio: {dpsRatio}</div>
                 </div>
             </div>
         </div>
