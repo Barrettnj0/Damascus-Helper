@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   Routes as Switch,
   Route,
-  Link
+  Link,
+  Navigate as Redirect
 } from "react-router-dom";
 import Calculators from "./Components/Calculators";
 
@@ -14,23 +15,26 @@ import './Stylesheets/App.css';
 // Website Routing Functionality
 function App() {
   return (
-    <Router>
-      <div className='router'>
-        <nav className='navbar'>
-          <ul className='navbar-listings'>
-              <Link className='link' to="/">Home</Link>
-              <Link className='link' to="/calculators">DPS Calculators</Link>
-              <Link className='link' to="/users">TBD</Link>
-          </ul>
-        </nav>
+    <div>
+      <Router>
+        <div className='router'>
+          <nav className='navbar'>
+            <ul className='navbar-listings'>
+                <Link className='link' to="/Damascus-Helper/">Home</Link>
+                <Link className='link' to="/Damascus-Helper/calculators">DPS Calculators</Link>
+                <Link className='link' to="/Damascus-Helper/users">TBD</Link>
+            </ul>
+          </nav>
 
-        <Switch>
-          <Route path="/calculators" element={ <Calculators/> } />
-          <Route path="/users" element={ <Users/> } />
-          <Route path="/" element={ <Home/> } />
-        </Switch>
-      </div>
-    </Router>
+          <Switch>
+            <Route path="/" element={<Redirect replace to="/Damascus-Helper/" />} />
+            <Route path="/Damascus-Helper/calculators" element={ <Calculators/> } />
+            <Route path="/Damascus-Helper/users" element={ <Users/> } />
+            <Route path="/Damascus-Helper/" element={ <Home/> } />
+          </Switch>
+        </div>
+      </Router>
+    </div>
   );
 }
 
